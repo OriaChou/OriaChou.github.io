@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+</head>
+<body>
+  <h1>在hexo新建使用html控制的空白頁</h1>
+  <p>
+    <ol>
+      <li>$ hexo new page myPage 新增頁面</li>
+      <li>page附檔名更改為html，並把內容清空，換成html基本語法</li>
+      <li>在 HTML 結構最前面增加移除模板樣式
+        ---
+        layout: false
+        ---
+      </li>
+      <li>完成！可以直接當成空白html檔進行編輯</li>
+    </ol>
+  </p>
+</body>
+</html>
