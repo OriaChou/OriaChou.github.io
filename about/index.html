@@ -1,23 +1,131 @@
+
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About</title>
-</head>
-<body>
-  <h1>在hexo新建使用html控制的空白頁</h1>
-  <p>
-    <ol>
-      <li>$ hexo new page myPage 新增頁面</li>
-      <li>page附檔名更改為html，並把內容清空，換成html基本語法</li>
-      <li>在 HTML 結構最前面增加移除模板樣式
-        ---
-        layout: false
-        ---
-      </li>
-      <li>完成！可以直接當成空白html檔進行編輯</li>
-    </ol>
-  </p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- javascript -->
+    <script src=".\main.js"></script>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Oria's site</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#title"
+              >Home <span class="sr-only"></span
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="title" id="title">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <img src=".\img\sleek.png" />
+          </div>
+          <div class="col d-flex align-items-center jumbotron">
+            <div>
+              <h1 class="display-3" id="greetings">Hello! I'm Oria!</h1>
+              <h4 class="lead">Welcome to my page :)</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <h2 class="pb-2 border-bottom">Skills</h2>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="col">
+            <img src=".\img\ui.png" />
+            <h3>Web</h3>
+            <ul type="circle">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+            </ul>
+          </div>
+          <div class="col">
+            <img src=".\img\mobile.png" />
+            <h3>Mobile</h3>
+            <ul type="circle">
+              <li>Kotlin</li>
+              <li>Java</li>
+              <li>Android Studio</li>
+            </ul>
+          </div>
+          <div class="col">
+            <img src=".\img\programming.png" />
+            <h3>Other Languages</h3>
+            <ul type="circle">
+              <li>C</li>
+              <li>Python</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <h2 class="pb-2 border-bottom">Projects</h2>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col">
+            <img src=".\img\todo.png" />
+            <h3>Drag & Drop To-Do</h3>
+            <p>
+              A simple-used to do list.Users can create new to-do and drag to
+              wherever they want.Made with Boostrap and JavaScript.Localstorage
+              supported.
+            </p>
+          </div>
+          <div class="col">
+            <img src=".\img\doctor.png" />
+            <h3>Doctor@home</h3>
+            <p>
+              An Android app.Users can make their own medicine list for personal
+              use.There's also a AED map and Pharmacy map.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

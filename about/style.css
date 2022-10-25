@@ -1,0 +1,49 @@
+.navbar-brand {
+  padding-left: 15px;
+}
+
+section {
+  padding: 10%;
+}
+
+.title {
+  height: 80%;
+  background-color: rgb(255, 255, 255);
+}
+
+.skills {
+  background-color: rgb(255, 243, 226);
+}
+
+.skills img {
+  height: 132px;
+  display: block;
+  margin: auto;
+}
+
+.skills .col,
+.projects .col {
+  padding: 0px 20px;
+  margin-top: 35px;
+}
+
+.skills .col h3,
+.projects .col h3 {
+  margin-top: 15px;
+}
+
+.projects {
+  background-color: rgb(255, 255, 255);
+}
+
+.projects img {
+  height: 230px;
+}
+.container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+footer {
+  background-color: rgb(255, 243, 226);
+}
